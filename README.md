@@ -97,6 +97,5 @@ Upload the `dist` folder to Netlify.
 **Jeyesh Karthik**  
 CSE Core, VIT Chennai  
 
-📧 jeyesh5karthik@gmail.com  
-🔗 LinkedIn: https://www.linkedin.com/in/jeyeshkarthik/  
-💻 GitHub: https://github.com/jeyeshkarthik
+jeyesh5karthik@gmail.com  
+LinkedIn: https://www.linkedin.com/in/jeyeshkarthik/  
