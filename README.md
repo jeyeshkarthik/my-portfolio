@@ -1,5 +1,5 @@
 # Jeyesh Karthik - Portfolio Website 
- **Netlify:** https://gilded-kelpie-4d281a.netlify.app/
+ **Netlify:** https://illustrious-sable-330806.netlify.app/
 
 A minimal and professional **portfolio website** built using **React, Tailwind CSS, Docker, and Netlify**.  
 This project showcases my profile, technical skills, projects, and contact information in a clean and responsive web interface.
