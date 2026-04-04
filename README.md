@@ -1,5 +1,7 @@
 # Jeyesh Karthik | Personal Portfolio
 
+**Live Deployment:** [https://my-portfolio-x3rl.onrender.com](https://my-portfolio-x3rl.onrender.com)
+
 A sleek, minimalistic, dark-themed personal developer portfolio built to showcase my projects, skills, and professional journey. Crafted with a focus on high performance, modern aesthetics, and smooth user experience.
 
 ---
@@ -36,7 +38,7 @@ A sleek, minimalistic, dark-themed personal developer portfolio built to showcas
 | **CSS Framework** | [Tailwind CSS v4](https://tailwindcss.com) |
 | **Routing** | [React Router v7](https://reactrouter.com/) |
 | **Containerization** | [Docker](https://www.docker.com/) & [Nginx](https://www.nginx.com/) |
-| **Cloud Target** | [Netlify](https://www.netlify.com/) |
+| **Cloud Target** | [Render](https://render.com/) |
 
 ---
 
@@ -126,19 +128,18 @@ my-portfolio/
 
 ## Deployment
 
-The site is actively deployed using **Netlify**.
+The site is actively deployed using **Render** at [https://my-portfolio-x3rl.onrender.com](https://my-portfolio-x3rl.onrender.com).
 
-### How to Manually Deploy
+### Serving via Render (Static Site)
 
-1. Compile the production bundled application:
-   ```bash
-   npm run build
-   ```
-2. A new `dist/` directory will be generated. Upload this entire folder directory to the classic Netlify Drop menu to update the site manually.
+1. Connect your GitHub repository to a new **Static Site** on Render.
+2. Set the build command to `npm install && npm run build`.
+3. Set the publish directory to `dist`.
+4. Render will automatically build and serve the application whenever changes are pushed to your `main` branch.
 
-### Implementing Automatic Deploys
+### Serving via Render (Web Service / Docker)
 
-For zero-touch deployments, link your Netlify project directly to this GitHub repository. Upon doing this, any pushes merged to the `main` branch will automatically build and publish instantly.
+Alternatively, the included `Dockerfile` can be used to deploy the application as a Docker Web Service on Render, using the provided lightweight Nginx web server.
 
 ---
 
