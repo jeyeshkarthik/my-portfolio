@@ -128,7 +128,7 @@ export default function Portfolio() {
             <div className="meta__divider" />
             <div className="meta__item">
               <span className="meta__num">B.Tech</span>
-              <span className="meta__label">CSE · 2027</span>
+              <span className="meta__label">CSE · 2028</span>
             </div>
           </FadeIn>
         </div>
@@ -160,7 +160,7 @@ export default function Portfolio() {
                 ['Focus',      'Full-Stack Development'],
                 ['University', 'VIT Chennai'],
                 ['Year',       '2nd Year, B.Tech CSE'],
-                ['Graduation', '2027'],
+                ['Graduation', '2028'],
                 ['Location',   'Chennai, India'],
               ].map(([label, value]) => (
                 <div key={label} className="detail">
