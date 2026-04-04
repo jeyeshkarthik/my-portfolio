@@ -1,6 +1,6 @@
 # Jeyesh Karthik — Portfolio
 
-[![Live](https://img.shields.io/badge/Live-illustrious--sable--330806.netlify.app-black?style=flat-square)](https://illustrious-sable-330806.netlify.app/)
+[![Live](https://img.shields.io/badge/jeyesh-portfolio.netlify.app/-black?style=flat-square)](https://jeyesh-portfolio.netlify.app/)
 [![React](https://img.shields.io/badge/React-19-black?style=flat-square&logo=react)](https://react.dev)
 [![Vite](https://img.shields.io/badge/Vite-8-black?style=flat-square&logo=vite)](https://vite.dev)
 [![Docker](https://img.shields.io/badge/Docker-black?style=flat-square&logo=docker)](https://docker.com)
