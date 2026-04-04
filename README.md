@@ -6,35 +6,37 @@ A sleek, minimalistic, dark-themed personal developer portfolio built to showcas
 
 ## Table of Contents
 
-- Features
-- Tech Stack
-- Getting Started
-- Docker Support
-- Project Structure
-- Deployment
-- Contact
-- License
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Getting Started](#getting-started)
+- [Docker Support](#docker-support)
+- [Project Structure](#project-structure)
+- [Deployment](#deployment)
+- [Contact](#contact)
+- [License](#license)
 
 ---
 
 ## Features
 
-- Sleek Dark Theme: A cohesive and modern visual aesthetic designed for visual clarity and impact.
-- Dynamic Project Routing: Individual detail pages for all featured projects, complete with architecture descriptions and GitHub repository links.
-- Fully Responsive: Adaptive layouts optimized for mobile, tablet, and desktop devices to ensure a seamless experience everywhere.
-- Lighting Fast: Leverages Vite and React for instantaneous hot module replacement and extremely fast load times.
-- Production Containerized: Complete Docker and Nginx setup out of the box for consistent enterprise deployment.
+- **Sleek Dark Theme:** A cohesive and modern visual aesthetic designed for visual clarity and impact.
+- **Dynamic Project Routing:** Individual detail pages for all featured projects, complete with architecture descriptions and GitHub repository links.
+- **Fully Responsive:** Adaptive layouts optimized for mobile, tablet, and desktop devices to ensure a seamless experience everywhere.
+- **Lighting Fast:** Leverages Vite and React for instantaneous hot module replacement and extremely fast load times.
+- **Production Containerized:** Complete Docker and Nginx setup out of the box for consistent enterprise deployment.
 
 ---
 
 ## Tech Stack
 
-- Frontend Setup: React 19
-- Build and Tooling: Vite 8
-- CSS Framework: Tailwind CSS v4
-- Routing: React Router v7
-- Containerization: Docker and Nginx
-- Cloud Target: Netlify
+| Category | Technology |
+|---|---|
+| **Frontend Setup** | [React 19](https://react.dev) |
+| **Build & Tooling** | [Vite 8](https://vite.dev) |
+| **CSS Framework** | [Tailwind CSS v4](https://tailwindcss.com) |
+| **Routing** | [React Router v7](https://reactrouter.com/) |
+| **Containerization** | [Docker](https://www.docker.com/) & [Nginx](https://www.nginx.com/) |
+| **Cloud Target** | [Netlify](https://www.netlify.com/) |
 
 ---
 
@@ -45,49 +47,51 @@ Follow these steps to run the portfolio seamlessly on your local machine.
 ### Prerequisites
 
 Please ensure you have the following installed:
-- Node.js (v18 or higher recommended)
-- npm (comes with Node.js)
-- Git
+- **Node.js** (v18 or higher recommended)
+- **npm** (comes with Node.js)
+- **Git**
 
 ### Installation
 
-1. Clone the repository
+1. **Clone the repository**
    ```bash
    git clone https://github.com/jeyeshkarthik/my-portfolio.git
    cd my-portfolio
    ```
 
-2. Install project dependencies
+2. **Install project dependencies**
    ```bash
    npm install
    ```
 
-3. Spin up the development server
+3. **Spin up the development server**
    ```bash
    npm run dev
    ```
 
-4. View locally by opening your preferred browser to http://localhost:5173
+4. **View locally**
+   Open your preferred browser to `http://localhost:5173`
 
 ---
 
 ## Docker Support
 
-The application is completely Dockerized using a multi-stage Dockerfile. It builds the React application and serves the static files using a lightweight Nginx web server.
+The application is completely Dockerized using a multi-stage `Dockerfile`. It builds the React application and serves the static files using a lightweight Nginx web server.
 
 ### Local Container Run
 
-1. Build the container image:
+1. **Build the container image:**
    ```bash
    docker build -t my-portfolio:latest .
    ```
 
-2. Run the image as a containerized service:
+2. **Run the image as a containerized service:**
    ```bash
    docker run -d -p 8080:80 --name portfolio-app my-portfolio:latest
    ```
 
-3. Verify by navigating to http://localhost:8080 in your web browser.
+3. **Verify:**
+   Navigate to `http://localhost:8080` in your web browser.
 
 ### Updating Changes via Docker
 
@@ -122,7 +126,7 @@ my-portfolio/
 
 ## Deployment
 
-The site is actively deployed using Netlify.
+The site is actively deployed using **Netlify**.
 
 ### How to Manually Deploy
 
@@ -133,22 +137,23 @@ The site is actively deployed using Netlify.
 2. A new `dist/` directory will be generated. Upload this entire folder directory to the classic Netlify Drop menu to update the site manually.
 
 ### Implementing Automatic Deploys
+
 For zero-touch deployments, link your Netlify project directly to this GitHub repository. Upon doing this, any pushes merged to the `main` branch will automatically build and publish instantly.
 
 ---
 
 ## Contact
 
-Jeyesh Karthik — Computer Science Engineering, VIT Chennai
+**Jeyesh Karthik** — Computer Science Engineering, VIT Chennai
 
 Passionate about robust backend systems, sleek frontend interfaces, and continuous technical learning.
 
-- Email: jeyesh5karthik@gmail.com
-- LinkedIn: linkedin.com/in/jeyeshkarthik
-- GitHub: github.com/jeyeshkarthik
+- **Email:** [jeyesh5karthik@gmail.com](mailto:jeyesh5karthik@gmail.com)
+- **LinkedIn:** [linkedin.com/in/jeyeshkarthik](https://www.linkedin.com/in/jeyeshkarthik/)
+- **GitHub:** [github.com/jeyeshkarthik](https://github.com/jeyeshkarthik)
 
 ---
 
 ## License
 
-This project is protected and licensed under the MIT License. Check out the LICENSE reference file for formal details.
+This project is protected and licensed under the **MIT License**. Check out the [LICENSE](./LICENSE) reference file for formal details.
