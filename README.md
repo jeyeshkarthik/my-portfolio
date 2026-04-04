@@ -89,11 +89,11 @@ The application is completely Dockerized using a multi-stage `Dockerfile`. It bu
 
 2. **Run the image as a containerized service:**
    ```bash
-   docker run -d -p 8080:80 --name portfolio-app my-portfolio:latest
+   docker run -d -p 8082:80 --name portfolio-app my-portfolio:latest
    ```
 
 3. **Verify:**
-   Navigate to `http://localhost:8080` in your web browser.
+   Navigate to `http://localhost:8082` in your web browser.
 
 ### Updating Changes via Docker
 
@@ -103,7 +103,7 @@ When iterating or changing the code, remove the old instance and spin up a new o
 docker stop portfolio-app
 docker rm portfolio-app
 docker build -t my-portfolio:latest .
-docker run -d -p 8080:80 --name portfolio-app my-portfolio:latest
+docker run -d -p 8082:80 --name portfolio-app my-portfolio:latest
 ```
 
 ---
