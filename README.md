@@ -114,10 +114,14 @@ docker run -d -p 8082:80 --name portfolio-app my-portfolio:latest
 my-portfolio/
 ├── public/               # Static assets directly served
 ├── src/                  # Application source code
-│   ├── components/       # Reusable React UI components
-│   ├── pages/            # Page templates (Home, About, Projects)
-│   ├── App.jsx           # Master application layout and client routing
-│   └── index.css         # Global styles and Tailwind utility injections
+│   ├── data/
+│   │   └── projects.js   # All project and skills data
+│   ├── assets/           # Images and static media
+│   ├── App.jsx           # Main portfolio layout and all sections
+│   ├── ProjectDetail.jsx # Individual project detail page
+│   ├── portfolio.css     # Core styles and design system
+│   ├── index.css         # Global CSS entry
+│   └── main.jsx          # React entry point and router setup
 ├── .gitignore            # Excluded version control tracking
 ├── Dockerfile            # Container definition and deployment stages
 ├── package.json          # Node dependency configurations
@@ -149,7 +153,7 @@ Alternatively, the included `Dockerfile` can be used to deploy the application a
 
 Passionate about robust backend systems, sleek frontend interfaces, and continuous technical learning.
 
-- **Email:** [jeyesh5karthik@gmail.com](mailto:jeyesh5karthik@gmail.com)
+- **Email:** [jeyesh23karthik@gmail.com](mailto:jeyesh23karthik@gmail.com)
 - **LinkedIn:** [linkedin.com/in/jeyeshkarthik](https://www.linkedin.com/in/jeyeshkarthik/)
 - **GitHub:** [github.com/jeyeshkarthik](https://github.com/jeyeshkarthik)
 
