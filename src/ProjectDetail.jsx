@@ -72,6 +72,16 @@ export default function ProjectDetail() {
 
             <div className="detail-divider" />
 
+            {project.isInternship && (
+              <div className="detail-internship-banner">
+                <div className="detail-internship-banner__icon">🏢</div>
+                <div className="detail-internship-banner__text">
+                  Internship Project — {project.internshipCompany}
+                  <span>This project was built during an internship at {project.internshipCompany}.</span>
+                </div>
+              </div>
+            )}
+
             <p className="detail-overview">{project.overview}</p>
 
             <div className="detail-section-label">Key Highlights</div>
@@ -121,7 +131,7 @@ export default function ProjectDetail() {
               minHeight: 120,
             }}>
               <span style={{ fontSize: '3.5rem' }}>
-                {{ 'smart-classroom': '🎓', 'metro-ticket': '🚇', 'games-website': '🎮', 'data-analysis': '📊', 'iot-research': '🔒' }[id] ?? '💡'}
+                {{ 'smart-classroom': '🎓', 'metro-ticket': '🚇', 'games-website': '🎮', 'data-analysis': '📊', 'iot-research': '🔒', 'ai-testing-zoho': '🤖', 'credit-fraud': '💳' }[id] ?? '💡'}
               </span>
             </div>
 

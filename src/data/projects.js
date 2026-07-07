@@ -19,7 +19,8 @@ export const PROJECTS = [
     year: '2026',
     github: 'https://github.com/jeyeshkarthik/smart-classroom-system',
     status: 'Completed',
-    accent: '#7c6af7',
+    accent: '#e05c2a',
+    isInternship: false,
   },
   {
     id: 'metro-ticket',
@@ -41,7 +42,55 @@ export const PROJECTS = [
     year: '2026',
     github: 'https://github.com/jeyeshkarthik/metro-ticket-booking-system',
     status: 'Completed',
-    accent: '#4facfe',
+    accent: '#2a8fb5',
+    isInternship: false,
+  },
+  {
+    id: 'ai-testing-zoho',
+    title: 'AI Testing — Site24x7',
+    subtitle: 'Internship Project · Zoho Corporation',
+    shortDesc:
+      'AI-powered test automation tool built during my internship at Zoho to verify and validate API calls in the Site24x7 Admin Panel, drastically reducing manual QA effort.',
+    overview:
+      'During my internship at Zoho Corporation, I built an AI-driven testing framework to automate the verification of API calls within the Site24x7 Admin Page. The project focused on reducing repetitive manual QA work by intelligently generating test cases, asserting response correctness, and flagging anomalies — significantly accelerating the testing cycle for the engineering team.',
+    highlights: [
+      'Built an AI-driven test automation framework for the Site24x7 Admin Panel at Zoho',
+      'Automated API call verification, reducing manual testing effort by a significant margin',
+      'Designed intelligent test case generation to cover edge cases and failure scenarios',
+      'Integrated assertion logic for response status codes, payloads, and latency thresholds',
+      'Collaborated directly with Zoho\'s QA engineers in an agile sprint environment',
+      'Delivered a fully functional prototype within the internship period',
+    ],
+    tech: ['Python', 'AI/ML', 'REST APIs', 'Pytest', 'JSON', 'Automation'],
+    year: '2025',
+    github: 'https://github.com/jeyeshkarthik/AI-Testing-Site24x7',
+    status: 'Completed',
+    accent: '#e53e6e',
+    isInternship: true,
+    internshipCompany: 'Zoho Corporation',
+  },
+  {
+    id: 'credit-fraud',
+    title: 'Credit Card Fraud Detection',
+    subtitle: 'Machine Learning · Classification',
+    shortDesc:
+      'ML model to detect fraudulent credit card transactions using Logistic Regression with under-sampling to handle severe class imbalance, built with Python & scikit-learn.',
+    overview:
+      'A machine learning project focused on detecting fraudulent credit card transactions in a highly imbalanced dataset. The project applies Logistic Regression with a systematic under-sampling strategy to balance classes and prevent the model from being biased toward the majority (non-fraud) class, resulting in a reliable fraud classifier.',
+    highlights: [
+      'Applied Logistic Regression to classify transactions as fraudulent or legitimate',
+      'Handled severe class imbalance using under-sampling of the majority class',
+      'Performed thorough exploratory data analysis on real-world financial data',
+      'Evaluated model performance using precision, recall, F1-score, and confusion matrix',
+      'Preprocessed and normalized features using scikit-learn pipelines',
+      'Documented findings and model behavior across multiple threshold configurations',
+    ],
+    tech: ['Python', 'scikit-learn', 'Pandas', 'NumPy', 'Matplotlib', 'Logistic Regression'],
+    year: '2025',
+    github: 'https://github.com/jeyeshkarthik/credit-card-fraud-detection',
+    status: 'Completed',
+    accent: '#2cb67d',
+    isInternship: false,
   },
   {
     id: 'games-website',
@@ -63,7 +112,8 @@ export const PROJECTS = [
     year: '2026',
     github: 'https://github.com/jeyeshkarthik/games-website',
     status: 'Completed',
-    accent: '#43e97b',
+    accent: '#f59e0b',
+    isInternship: false,
   },
   {
     id: 'data-analysis',
@@ -85,7 +135,8 @@ export const PROJECTS = [
     year: '2025',
     github: null,
     status: 'Completed',
-    accent: '#f7971e',
+    accent: '#7c6af7',
+    isInternship: false,
   },
   {
     id: 'iot-research',
@@ -108,6 +159,7 @@ export const PROJECTS = [
     github: null,
     status: 'In Progress',
     accent: '#ee0979',
+    isInternship: false,
   },
 ];
 
@@ -115,7 +167,7 @@ export const SKILLS = [
   { category: 'Languages', emoji: '⌨️', items: ['Python', 'Java', 'C', 'C++', 'JavaScript'] },
   { category: 'Frontend', emoji: '🎨', items: ['React', 'HTML5', 'CSS3', 'Vite'] },
   { category: 'Backend', emoji: '⚙️', items: ['Node.js', 'Express', 'REST APIs', 'Socket.io'] },
-  { category: 'Data Science', emoji: '📊', items: ['Pandas', 'NumPy', 'Matplotlib', 'Seaborn'] },
+  { category: 'AI & Data Science', emoji: '🤖', items: ['scikit-learn', 'Pandas', 'NumPy', 'Matplotlib', 'Seaborn', 'Pytest'] },
   { category: 'Database', emoji: '🗄️', items: ['MongoDB', 'SQLite', 'Oracle DB', 'SQL'] },
-  { category: 'DevOps', emoji: '🚀', items: ['Docker', 'Nginx', 'Git', 'CI/CD'] },
+  { category: 'DevOps & Tools', emoji: '🚀', items: ['Docker', 'Nginx', 'Git', 'CI/CD', 'Test Automation'] },
 ];

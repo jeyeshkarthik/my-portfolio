@@ -60,7 +60,7 @@ export default function Portfolio() {
   const goto = (id) => document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
   const openProject = (id) => navigate(`/project/${id}`);
 
-  const EMOJI_MAP = { 'smart-classroom': '🎓', 'metro-ticket': '🚇', 'games-website': '🎮', 'data-analysis': '📊', 'iot-research': '🔒' };
+  const EMOJI_MAP = { 'smart-classroom': '🎓', 'metro-ticket': '🚇', 'games-website': '🎮', 'data-analysis': '📊', 'iot-research': '🔒', 'ai-testing-zoho': '🤖', 'credit-fraud': '💳' };
 
   return (
     <div className="root">
@@ -98,8 +98,8 @@ export default function Portfolio() {
             </div>
             <h1 className="hero__name">Jeyesh Karthik</h1>
             <p className="hero__sub">
-              2nd-year Computer Science student at VIT Chennai — building software
-              that solves real problems, from full-stack web platforms to data-driven research.
+              Pre-final year Computer Science student at VIT Chennai — building software
+              that solves real problems, from full-stack web platforms to ML models and AI-driven tools.
             </p>
             <div className="hero__actions">
               <button className="btn btn--primary" onClick={() => goto('projects')}>
@@ -112,12 +112,12 @@ export default function Portfolio() {
           </FadeIn>
           <FadeIn delay={150} className="hero__meta">
             <div className="meta__item">
-              <span className="meta__num">5+</span>
+              <span className="meta__num">7+</span>
               <span className="meta__label">Projects</span>
             </div>
             <div className="meta__divider" />
             <div className="meta__item">
-              <span className="meta__num">15+</span>
+              <span className="meta__num">20+</span>
               <span className="meta__label">Technologies</span>
             </div>
             <div className="meta__divider" />
@@ -157,9 +157,10 @@ export default function Portfolio() {
             </FadeIn>
             <FadeIn delay={160} className="about__details">
               {[
-                ['Focus',      'Full-Stack Development'],
+                ['Focus',      'Full-Stack & ML Development'],
                 ['University', 'VIT Chennai'],
-                ['Year',       '2nd Year, B.Tech CSE'],
+                ['Year',       'Pre-final Year, B.Tech CSE'],
+                ['CGPA',       '9.14'],
                 ['Graduation', '2028'],
                 ['Location',   'Chennai, India'],
               ].map(([label, value]) => (
@@ -212,7 +213,13 @@ export default function Portfolio() {
                          style={{ background: `${p.accent}18`, border: `1px solid ${p.accent}30` }}>
                       {EMOJI_MAP[p.id] ?? '💡'}
                     </div>
-                    <div className="project-card__badges">
+                  <div className="project-card__badges">
+                      {p.isInternship && (
+                        <span className="badge badge--intern">
+                          <span className="badge__dot" />
+                          Internship
+                        </span>
+                      )}
                       <span className="badge badge--year">{p.year}</span>
                       <span className={`badge ${p.status === 'Completed' ? 'badge--done' : 'badge--wip'}`}>
                         <span className="badge__dot" />
@@ -252,9 +259,9 @@ export default function Portfolio() {
           </FadeIn>
           <FadeIn delay={80}>
             <div className="contact__grid">
-              <a href="mailto:jeyesh5karthik@gmail.com" className="contact__card">
+              <a href="mailto:jeyesh23karthik@gmail.com" className="contact__card">
                 <span className="contact__card-label">Email</span>
-                <span className="contact__card-value">jeyesh5karthik@gmail.com</span>
+                <span className="contact__card-value">jeyesh23karthik@gmail.com</span>
               </a>
               <a href="https://www.linkedin.com/in/jeyeshkarthik/" target="_blank" rel="noopener noreferrer" className="contact__card">
                 <span className="contact__card-label">LinkedIn</span>
